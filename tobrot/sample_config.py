@@ -18,16 +18,16 @@ from tobrot.get_cfg import get_config
 
 class Config:
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
+    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "1877753406:AAEy1yKx7yUAFIOu0VbwtsEGMW3qBw_oxCk")
     # The Telegram API things
-    APP_ID = int(get_config("APP_ID", should_prompt=True))
-    API_HASH = get_config("API_HASH", should_prompt=True)
+    APP_ID = int(get_config("APP_ID", 1957706))
+    API_HASH = get_config("API_HASH", "b1fc05cb6e99b67c6fca96538c6d7e7e")
     # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
     AUTH_CHANNEL = set(
         int(x) for x in get_config(
             "AUTH_CHANNEL",
-            should_prompt=True
+            -1001322070077
         ).split()
     )
     # the download location, where the HTTP Server runs
